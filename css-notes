@@ -1,0 +1,93 @@
+// CSS notes //
+
+/* set variables */
+:root {
+  --primary-color: white;
+  --secondary-color: blue;
+}
+
+/* applying to the entire webpage, used for initializing */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* applying desired document specifications to webpage */
+body {
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+
+/* THIS PART IS FROM JAMES MCARTHUR'S CSS FLEXBOX YOUTUBE TUTORIAL */
+/*BASE STYLES*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vw;
+    color: white;
+    padding: 24px;
+}
+
+.container {
+    background: #e0c7ff;
+    width: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.item {
+    background-color: #3929ff;
+    padding: 24px;
+    width: fit-content;
+    height: fit-content;
+}
+
+/*END OF BASE STYLES*/
+
+.container {
+    display: flex;
+    flex-direction: row; /*default orientation-horizontal; use "column" for downward direction*/
+    /*align elements  on main axis (x-axis); by default is row*/
+    justify-content: space-between;
+    /*flex-end: sends items to end;
+    flex-start: sends items to start;
+    center: center items;
+    space-around: even spacing for each item;
+    space-between: even space between all items in row;
+    */
+
+    /*align-items is to align elements on the cross axis (y-axis)*/
+    align-items:flex-start;
+    /*flex-start: align items at the top (start of main axis);
+    flex-end: align items at bottom;
+    center: center of page;
+    stretch: stretch items on the entire axis;
+    */
+
+    flex-wrap: wrap; /*to fit overflowing elements to a secondary row*/
+    gap: 14px; /*space in between elements*/
+    flex: 1 0 4; /*singlehandly set 3 values: flex-grow flex-shrink flex-basis*/
+    align-self: flex-end; /*aligns a specific child element*/
+}
+
+.item1 {
+    width: 1000px;
+    /*what proportion of the flexbox an element is allowed to take up*/
+    flex-grow: 1;
+    flex-shrink: 1; /*opposite of flex-grow;*/
+    flex-basis: /*initiates flex conditions for a child element*/
+}
+/*to target every single html element*/
+* {
+    border: 1px solid black;
+
+}
+
+
+  
