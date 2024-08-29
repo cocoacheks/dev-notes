@@ -1,0 +1,29 @@
+// HTML notes //
+
+/ always initiate with "!"
+/ link in stylesheet, fonts, and icons links in the <head> tag
+  <link rel="stylesheet" href="styles.css"/>
+  *fontawesome cdn embed tag*
+  *paste embed code of font or icon links*
+
+/ organizational tags /
+<body> | <header> <main> <footer> | </body>
+
+<section> - to section big divisions of a webpage
+<nav> - navigation bar/pane. most likely to set up a navigation bar, I use this for scrollbar features and anchor links in a bar.
+<div> - to group certain elements within the webpage.
+
+/ functions /
+<a> - anchor tag, to define links in the webpage.
+<a href="" target="_blank"> - when linking to a different website, target _blank means opening it in a new tab.
+<a href="/"> - when anchor tag is clicked on the webpage, it scrolls back up to the top of the page.
+
+<img src="" alt="" /> - to place an image in the webpage.
+
+/ typing /
+<h1 / h2 / h3 / h4 / h5 / h6> - header or title types
+<p> - paragraph text or regular text
+
+/ class and IDs /
+<div class=""> - to classify a group of text and add functionalities. can use multiple classes for one tag by adding space in between.
+<a id=""> - to classify one element and add functionalities. this is exclusive for one assigned element, cannot have more than one elements with the same id.
