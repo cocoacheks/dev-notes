@@ -90,4 +90,14 @@ body {
 }
 
 
+/* POSITION */
+.item1 {
+  position: absolute; /*the item is not placed within the document, but has its own position outside the document, does
+                        not align or relate with the elements in the webpage*/
+  position: relative; /*the item is aligned or related with the elements within the webpage*/
+  position: sticky; /* it stays on its assigned position, then moves along the screen before the viewsight passes it, basically user keeps seeing this element on the screen as it goes along*/
+  position: static; /* only stays on its assigned position 
+  position: fixed; /*
+
+
   
